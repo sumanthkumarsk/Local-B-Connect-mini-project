@@ -84,7 +84,7 @@ Local-B-Connect/
 1. **Clone the repo**
 ```bash
 git clone https://github.com/sumanthkumarsk/Local-B-Connect-mini-project.git
-cd Local-B-Connect-mini-project
+cd Local-B-Connect-mini-project  ```
 
 configue .env file
 
