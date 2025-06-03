@@ -83,22 +83,22 @@ Local-B-Connect/
 
 1. **Clone the repo**
 
--git clone https://github.com/sumanthkumarsk/Local-B-Connect-mini-project.git
--cd Local-B-Connect-mini-project 
+#git clone https://github.com/sumanthkumarsk/Local-B-Connect-mini-project.git
+#cd Local-B-Connect-mini-project 
 
 2. **configue .env file**
 
--PORT=5000
--MONGO_URI=your_mongodb_uri
--JWT_SECRET=your_jwt_secret
+#PORT=5000
+#MONGO_URI=your_mongodb_uri
+#JWT_SECRET=your_jwt_secret
 
 3. **In one terminal**
--cd frontend
--npm run dev
+#cd frontend
+#npm run dev
 
 4. **In another terminal**
--cd backend
--npm start
+#cd backend
+#npm start
 
 
 ### Snapshots
