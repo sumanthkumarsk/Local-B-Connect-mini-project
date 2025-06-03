@@ -38,21 +38,36 @@ Local B Connect is a **MERN stack** based web application that connects users wi
 
 ---
 
-## 📁 Project Structure
-📦 Local-B-Connect/
-├── client/ # React frontend
-│ └── src/
-│ ├── components/
-│ ├── pages/
-│ ├── utils/
-│ └── App.js
-├── server/ # Node.js + Express backend
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── server.js
-└── README.md
+## ## 📁 Project Structure
+
+```
+Local-B-Connect/
+├── frontend/                     # React Frontend
+│   ├── public/                 # Public assets
+│   └── src/
+│       ├── assets/             # Images, icons
+│       ├── components/         # Reusable UI components
+│       ├── pages/              # All route-level pages (Login, Signup, Dashboard, etc.)
+│       ├── context/            # React context for global state management
+│       ├── hooks/              # Custom React hooks
+│       ├── services/           # API service functions
+│       ├── utils/              # Helper functions
+│       ├── App.js              # Root component
+│       └── index.js            # Entry point
+│
+├── backend/                     # Node.js + Express Backend
+│   ├── config/                 # DB config, external service keys
+│   ├── controllers/            # Route controllers for business logic
+│   ├── middleware/             # Auth and error middlewares
+│   ├── models/                 # Mongoose models
+│   ├── routes/                 # API route definitions
+│   ├── utils/                  # Helper functions
+│   ├── socket/                 # Socket.io events and handlers
+│   ├── server.js               # Main server entry
+│   └── .env                    # Environment variables
+│
+└── README.md                   # Project documentation
+```
 
 
 ---
