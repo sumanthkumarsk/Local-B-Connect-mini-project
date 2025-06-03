@@ -82,20 +82,28 @@ Local-B-Connect/
 ### 🔄 Setup
 
 1. **Clone the repo**
-```bash
-git clone https://github.com/sumanthkumarsk/Local-B-Connect-mini-project.git
-cd Local-B-Connect-mini-project  ```bash
 
-configue .env file
+git clone https://github.com/sumanthkumarsk/Local-B-Connect-mini-project.git
+cd Local-B-Connect-mini-project 
+
+2. **configue .env file**
 
 PORT=5000
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 
-# In one terminal
+3. **In one terminal**
 cd frontend
 npm run dev
 
-# In another terminal
+4. **In another terminal**
 cd backend
 npm start
+
+
+### Snapshots
+![Screenshot 2025-05-29 083126](https://github.com/user-attachments/assets/09598a1b-4106-4fb7-a7c2-4988380e6948)
+![Screenshot 2025-05-29 083545](https://github.com/user-attachments/assets/0b51a0ce-239a-439e-9632-6662c764dc16)
+
+
+
