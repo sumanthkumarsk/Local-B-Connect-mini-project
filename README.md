@@ -7,7 +7,7 @@ Local B Connect is a **MERN stack** based web application that connects users wi
 ## 🔧 Tech Stack
 
 - **Frontend:** React.js, Bootstrap, Axios, Socket.io-client  
-- **Backend:** Node.js, Express.js, Socket.io  
+- **Backend:** Node.js, Express.js
 - **Database:** MongoDB (Mongoose)  
 - **Authentication:** JWT, bcrypt  
 
