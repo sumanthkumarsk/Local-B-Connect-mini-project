@@ -19,7 +19,7 @@ function UserDashboard() {
   const [loadingBookings, setLoadingBookings] = useState(false);
   const navigate = useNavigate();
 
-  // Logout handler
+  
   const handleLogout = () => {
     localStorage.clear();
     window.location.href = "/login";
@@ -27,7 +27,7 @@ function UserDashboard() {
 
   
 
-  // Fetch user bookings
+  
   useEffect(() => {
     const fetchBookings = async () => {
       setLoadingBookings(true);
@@ -46,7 +46,7 @@ function UserDashboard() {
     fetchBookings();
   }, []);
 
-  // Fetch all services
+  
   useEffect(() => {
     const fetchServices = async () => {
       setLoading(true);
@@ -63,7 +63,7 @@ function UserDashboard() {
     fetchServices();
   }, []);
 
-  // Filter services by category and search
+  
   useEffect(() => {
     let filteredData = [...services];
     // Category filter
@@ -83,7 +83,7 @@ function UserDashboard() {
 
   return (
     <>
-      {/* Navbar */}
+      
       <Navbar bg="primary" variant="dark" expand="lg" className="mb-4">
         <div className="container">
           <Navbar.Brand>Local-B-Connect</Navbar.Brand>
@@ -99,7 +99,7 @@ function UserDashboard() {
         </div>
       </Navbar>
       <div className="container">
-        {/* My Bookings Section */}
+        
         <h2 className="mb-4 text-primary">My Booked Services</h2>
         {loadingBookings ? (
           <div className="text-center py-3"><Spinner animation="border" /></div>

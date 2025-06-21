@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <AppNavbar />
       <div className="home-page">
-        {/* Hero Section */}
+        
         <section className="hero-section py-5 bg-light">
           <Container>
             <Row className="align-items-center">
@@ -39,7 +39,7 @@ const Home = () => {
           </Container>
         </section>
 
-      {/* Features Section */}
+      
       <section className="features-section py-5">
         <Container>
           <h2 className="text-center mb-5">Why Choose Local-B-Connect?</h2>

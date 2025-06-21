@@ -19,7 +19,7 @@ function Login() {
       localStorage.setItem("token", token);
       localStorage.setItem("userType", userType);
       localStorage.setItem("userId", userId);
-      // Redirect based on true userType from backend
+
       if (userType === "provider") {
         navigate("/provider-dashboard");
       } else if (userType === "user") {

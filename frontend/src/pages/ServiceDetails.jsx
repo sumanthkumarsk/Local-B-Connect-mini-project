@@ -71,7 +71,7 @@ function ServiceDetails() {
         <>
           <div className="row">
             <div className="col-md-6">
-              {/* Photos carousel */}
+              
               {photos.length > 0 ? (
                 <>
                   <Carousel interval={null} onSelect={i => setImgIndex(i)} activeIndex={imgIndex} className="mb-3" style={{ borderRadius: 12, boxShadow: '0 2px 16px #eee' }}>
@@ -94,7 +94,7 @@ function ServiceDetails() {
                       </Carousel.Item>
                     ))}
                   </Carousel>
-                  {/* Modal for zoomed image */}
+                  
                   <Modal show={showImgModal} onHide={() => setShowImgModal(false)} centered size="lg">
                     <Modal.Body className="text-center p-0">
                       <img
@@ -126,7 +126,7 @@ function ServiceDetails() {
               <p className="mb-1"><strong>Price:</strong> ₹{service.price || "-"}</p>
               <p className="mb-1"><strong>⭐ Rating:</strong> {service.rating || "No ratings yet"}</p>
               <p className="mb-1"><strong>Description:</strong> {service.description || "-"}</p>
-              {/* Available slots */}
+              
               <div className="mb-3">
                 <strong>Available Slots:</strong>
                 {availableSlots.length > 0 ? (
@@ -145,7 +145,7 @@ function ServiceDetails() {
                   <span className="text-muted ms-2">No slots set</span>
                 )}
               </div>
-              {/* Booking form */}
+              
               <div className="mb-3">
                 <h5>Book this Service</h5>
                 <Form onSubmit={handleBooking} className="row g-2">

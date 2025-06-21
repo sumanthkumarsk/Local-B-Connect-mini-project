@@ -19,8 +19,8 @@ const initialForm = {
 };
 
 function ProviderDashboard() {
-  // ...existing code...
-  // Add booking status handler
+  
+  
   const handleBookingStatus = async (bookingId, status) => {
     try {
       await axios.post("http://localhost:5000/api/bookings/confirm", { bookingId, status }, {
@@ -34,7 +34,7 @@ function ProviderDashboard() {
 
   const [services, setServices] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  const [editing, setEditing] = useState(null); // service being edited
+  const [editing, setEditing] = useState(null); 
   const [form, setForm] = useState(initialForm);
   const [photoPreviews, setPhotoPreviews] = useState([]);
   const [alert, setAlert] = useState({ show: false, variant: "", message: "" });
@@ -43,7 +43,7 @@ function ProviderDashboard() {
 
   const token = localStorage.getItem("token");
 
-  // Bookings for this provider
+  
   const [bookings, setBookings] = useState([]);
   const fetchProviderBookings = async () => {
     try {
@@ -76,14 +76,14 @@ function ProviderDashboard() {
     fetchProviderBookings();
   }, []);
 
-  // Handle photo input
+  
   const handlePhotoChange = (e) => {
     const files = Array.from(e.target.files);
     setForm({ ...form, photos: files });
     setPhotoPreviews(files.map(file => URL.createObjectURL(file)));
   };
 
-  // Open modal for add/edit
+  
   const openModal = (service = null) => {
     setEditing(service);
     if (service) {
@@ -106,7 +106,7 @@ function ProviderDashboard() {
     setShowModal(true);
   };
 
-  // Slot management handlers
+  
   const handleSlotChange = (idx, field, value) => {
     const slots = [...form.availability];
     if (field === 'maxCapacity') {
@@ -132,13 +132,13 @@ function ProviderDashboard() {
   };
 
 
-  // Add or update service
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setAlert({ show: false, variant: "", message: "" });
     try {
-      // Ensure all maxCapacity are integers before submit
+      
       const safeAvailability = form.availability.map(slot => ({
         ...slot,
         maxCapacity: parseInt(slot.maxCapacity) || 1,
